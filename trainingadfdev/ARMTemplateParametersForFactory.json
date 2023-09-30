@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "trainingadfdev"
+		},
+		"AzureSqlDatabase_Source_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=trainingsource.database.windows.net;Initial Catalog=trainingsource;User ID=trainingsource_admin"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://trainingdatalakesource.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_tenant": {
+			"value": "881ac007-74a7-4784-bce0-9aefb00920fc"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
+			"value": "98946144-763b-4aaa-ac3c-4f3626379faa"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_url": {
+			"value": "https://trainingdatalakedev.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_tenant": {
+			"value": "881ac007-74a7-4784-bce0-9aefb00920fc"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_servicePrincipalId": {
+			"value": "98946144-763b-4aaa-ac3c-4f3626379faa"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://trainingkeyvaultdev.vault.azure.net/"
+		},
+		"RestService_source_properties_typeProperties_url": {
+			"value": "https://airlabs.co/api/v9/airlines"
+		}
+	}
+}

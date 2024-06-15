@@ -22,7 +22,7 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_servicePrincipalId": {
 			"type": "string",
-			"defaultValue": "98946144-763b-4aaa-ac3c-4f3626379faa"
+			"defaultValue": "5d8595ed-f7a5-4bb7-9d49-137c10c9c8c3"
 		},
 		"AzureDataLakeStorage_sink_properties_typeProperties_url": {
 			"type": "string",
@@ -34,7 +34,7 @@
 		},
 		"AzureDataLakeStorage_sink_properties_typeProperties_servicePrincipalId": {
 			"type": "string",
-			"defaultValue": "98946144-763b-4aaa-ac3c-4f3626379faa"
+			"defaultValue": "5d8595ed-f7a5-4bb7-9d49-137c10c9c8c3"
 		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
@@ -319,9 +319,9 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"url": "https://trainingkeyvaultdev.vault.azure.net/secrets/api-key/6a49755823194fe48052f3a865831d77?api-version=7.0",
 							"method": "GET",
 							"headers": {},
+							"url": "https://trainingkeyvaultdev.vault.azure.net/secrets/api-key/6a49755823194fe48052f3a865831d77?api-version=7.0",
 							"authentication": {
 								"type": "MSI",
 								"resource": "https://vault.azure.net"

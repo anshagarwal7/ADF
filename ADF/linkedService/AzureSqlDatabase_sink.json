@@ -1,0 +1,23 @@
+{
+	"name": "AzureSqlDatabase_sink",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "trainingdev.database.windows.net",
+			"database": "trainingdev",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "training_admin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sql-sink-password"
+			}
+		}
+	}
+}

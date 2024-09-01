@@ -85,7 +85,14 @@
 									"tableOption": "autoCreate",
 									"disableMetricsCollection": false
 								},
-								"enableStaging": false
+								"enableStaging": true,
+								"stagingSettings": {
+									"linkedServiceName": {
+										"referenceName": "AzureDataLakeStorage_sink",
+										"type": "LinkedServiceReference"
+									},
+									"path": "manualfiles"
+								}
 							},
 							"inputs": [
 								{

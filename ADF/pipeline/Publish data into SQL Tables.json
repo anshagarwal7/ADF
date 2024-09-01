@@ -77,7 +77,7 @@
 								"sink": {
 									"type": "AzureSqlSink",
 									"preCopyScript": {
-										"value": "TRUNCATE TABLE dbo.[@{item().publish_table_name}]",
+										"value": "IF EXISTS \n(\nSELECT 1 FROM INFORMATION_SCHEMA.TABLES \nWHERE TABLE_NAME = '@{item().publish_table_name}'\n)\nTRUNCATE TABLE dbo.[@{item().publish_table_name}]\n",
 										"type": "Expression"
 									},
 									"writeBehavior": "insert",
